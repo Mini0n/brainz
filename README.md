@@ -1,2 +1,0 @@
-# brainz
-BrainSolvers project
