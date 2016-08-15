@@ -1,0 +1,306 @@
+/*
+------------
+Visit twitterbootstrap.org for more tut 
+-------------
+*/
+
+/*@import url('css/bootstrap.min.css');
+@import url('css/bootstrap-responsive.min.css');
+/* New styles */
+
+label.valid {
+	width: 10%;
+	height: 10%;
+	float: left;
+	background: url(img/valid.png) center center no-repeat;
+	display: inline-block;
+	text-indent: -9999px;	
+}
+span.error {
+	font-family:'Helvetica';
+	color: #D50000; /*rojo*/
+	text-align: left;
+	font-size: 0.7em;
+	height: 2.5vh;
+	line-height: 4vh;
+	float: left;
+	display: block;
+	margin: 0 0  0 1%;
+}
+form{
+	width: 100%;
+	height: 38vh;
+	float: left;
+	display: block;
+	font-family: 'Helvetica';
+	font-size: 1em;
+	color: #162D36; /*Color de letras*/
+	margin-top: 0.5%;
+}
+div.form-control-group{
+	width: 100%;
+	float: left;
+	display: block;
+	margin: 1% 0;
+}
+form label#cumple{
+	width: 16%;
+	height: 2.5vh;
+	font-size: 1em;
+	color: #FFFFFF;
+	float: left;
+	display: block;
+	letter-spacing: 1px;
+}
+form label.larga{
+	width: 30%;
+	height: 2.5vh;
+	line-height: 100%;
+	margin: 1% 0 0 0;
+	float: left;
+	display: block;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFFFFF;
+  font-size: 1em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FFFFFF;
+    font-size: 1em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FFFFFF;
+    font-size: 1em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFFFFF;
+    font-size: 1em;
+}
+
+input{
+	width: 80%;
+	height: 2.5vh;
+	float: left;
+	display: block;
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: #162D36; /*Color de letras*/
+	text-align: left;
+}
+input#nombre{
+	border-bottom: 4px solid #FFFFFF;
+	background: none;
+	height: 2.5vh;
+	margin: 0;
+}
+input#apellido{
+	border-bottom: 4px solid #FFFFFF;
+	background: none;
+	height: 2.5vh;
+	margin: 0;
+}
+input#cumple{
+	border-bottom: 4px solid #FFFFFF;
+	background: none;
+	color: #FFFFFF;
+	font-family: 'Helvetica';
+	height: 3vh;
+	margin: 0;
+	width: 64%;
+	text-align: center;
+}
+input#email{
+	border-bottom: 4px solid #FFFFFF;
+	background: none;
+	height: 3vh;
+	margin: 0;
+}
+input#agree{
+	margin: 0.5% 0 0 0;
+	height: 3vh;
+	line-height: 3vh;
+	width: 5%;
+	float: left;
+	display: block;
+}
+select#genero{
+	width: 70%;
+	height: 4vh;
+	line-height: 4vh;
+	margin: 0;
+	float: left;
+	display: block;
+	background: none;
+	border-bottom: 4px solid #FFFFFF;
+	color: #162D36; /*azul oscuro formulario*/
+	border-radius: 0;
+	font-family: 'Helvetica';
+	font-size: 1em;
+	-webkit-appearance:none;
+
+}
+button#submit{
+	float: left;
+	display: block;
+	width: 40%;
+	height: 4vh;
+	margin-left: 20%;
+	background: #455E6B;
+	border-radius: 11.25px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 4vh;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+button#submit:hover{
+	background: #162D36; /*azul oscuro formulario*/
+	-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+/*PLACEHOLDER*/
+
+
+@media only screen and (max-width: 800px) {
+form{   	
+    	height: 100%;
+    	margin-top: 5%;
+    	/*background: #5098D3; /*azul cielo*/
+    }
+    span.error {
+		font-family:'Helvetica';
+		color: #D50000; /*rojo*/
+		text-align: left;
+		font-size: 0.4em;
+		height: 2vh;
+		line-height: 2vh;
+		float: left;
+		display: block;
+		margin-top: 0.3%;
+	}
+
+	div.form-control-group{
+		width: 100%;
+		height: 7vh;
+		float: left;
+		display: block;
+		margin: 0.3vh 0;
+}
+   /* form label{
+    	width: 80%;
+    	height: 2vh;
+    	line-height: 1vh;
+    	font-size: 0.7em;
+    	font-family: 'Helvetica';
+    	float: left;
+    	display: block;
+    }*/
+    div#terminos_mobile{
+    	height:3.5vh;
+    	margin-bottom: 2vh;
+    }
+    label#terminos{
+    	height: 2vh;
+    	width: 80%;
+    	float: left;
+    	display: block;
+    	font-size: 0.7em;
+    }
+    input#agree{
+    	width: 25px;
+    	height: 25px;
+    	height: 2vh;
+    	float: left;
+    	display: block;
+    }
+    label.genero{
+		width:45%;
+		float: left;
+		text-align: left;
+		color: #FFFFFF;
+	}
+	label#cumple{ /*original mide 16%*/
+		float: left;
+		display: block;
+		height: 2vh;
+		margin-bottom: 0.4vh;
+		width: 100%;
+		margin-right: 50%;  /*16*500=80*/
+		font-family: 'Helvetica';
+		font-size: 0.1em;
+	}
+	label#cumple p{
+		font-size: 0.7em;
+		font-family: 'Helvetica';
+	}
+	input#cumple{
+		border-bottom: 2px solid #FFFFFF;
+		float: left;
+		display: block;
+		background: none;
+		color: #FFFFFF;
+		border-radius: 0;
+		font-family: 'Helvetica';
+		font-size: 0.7em;
+		width: 80%;
+	}
+    form input{
+    	width: 80%;
+    	height: 3.2vh;
+    	float: left;
+    	display: block;
+    	font-size: 0.6em;
+    	font-family: 'Helvetica';
+    	text-align: left;
+    	margin-top: 2%;
+    }
+
+    input#nombre{
+    	border-bottom: 2px solid #FFFFFF;
+    	border-radius: 0;
+    	font-family: 'Helvetica';
+    }
+    input#apellido{
+		border-bottom: 2px solid #FFFFFF;
+		background: none;
+		border-radius: 0;
+	}
+	select#genero{
+		width: 80%;
+		height: 3.5vh;
+		float: left;
+		display: block;
+		margin:  0vh 0 0vh 0;
+		background: none;
+		border-bottom: 2px solid #FFFFFF;
+		color: #FFFFFF;
+		border-radius: 0;
+		font-family: 'Helvetica';
+		font-size: 0.6em;
+	}
+    input#email{
+    	border-bottom: 2px solid #FFFFFF;
+    	font-family: 'Helvetica';
+    	border-radius: 0;
+    }
+    button#enviar{
+    	font-size: 0.6em;
+    	width: 50%;
+    	float: left;
+    	display: block;
+    }
+    button#enviar{
+    	font-size: 0.6em;
+    }
+	
+	}
+

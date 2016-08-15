@@ -1,0 +1,168 @@
+*{
+	border:none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	background: #FFFFFF;
+	height: 100vh;
+}
+div#wrapper{
+	width: 100%;
+	height: 100%;
+}
+div#foto_izq{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: block;
+	background: url(foto.png) no-repeat;
+	background-size: cover;
+}
+div#foto_izq img{
+	width: 20%;
+	position: absolute;
+	bottom: 3vh;
+	left: 13%;
+}
+div#log{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: block;
+}
+div#sup{
+	float: left;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: 50%;
+}
+div#sup img{
+	margin: 0;
+	width: 50%;
+}
+div#inf{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 50%;
+	background: #4F97D2; /*azul cielo*/
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+	width: 80%;
+	/*background:yellow;*/
+	float: left;
+	display: block;
+	font-family: 'Helvetica';
+}
+div#usuario{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 7vh;
+	margin-bottom: 0vh;
+	/*background:orange;*/
+}
+hr{
+	width: 100%;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+div#pass{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 9vh;
+	margin-bottom: 3vh;
+	/*background:green;*/
+}
+form img{
+	width: 7%; 
+	float: left;
+	display: block;
+}
+form input{
+	width: 91%;
+	margin-left: 2%;
+	height: 6vh;
+	float: left;
+	display: block;
+	background: none;
+	line-height: 6vh;
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 1.2em;
+	font-family: 'Helvetica';
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FFFFFF;
+   font-size: 1.2em;
+  font-weight: 100;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+form input.boton{
+	width: 20%;
+	height: 5vh;
+	line-height: 5vh;
+	margin-left: 40%;
+	background: #FFFFFF;
+	font-size: 1em;
+	font-family: 'Helvetica';
+	color: #4F97D2; /*azul cielo*/
+	text-align: center;
+	cursor: pointer;
+}
+div.error{
+	font-family: 'Helvetica';
+	text-align: center;
+	font-weight: 400;
+	width: 30%;
+	padding: 1%;
+	float: left;
+	display: block;
+	margin-bottom: 2%;
+	color: #FFFFFF;
+	font-size: 1.1em;	
+	position: absolute;
+	top: 55%;
+	left: 60%;
+	background: rgba(255,0,0,0.5);
+}
+@media only screen and (max-width: 800px) {
+
+
+
+
+
+
+
+
+
+
+
+}

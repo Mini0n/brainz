@@ -1,0 +1,15 @@
+<?php
+
+echo date('o-m-d',time());
+
+echo ("/n");
+
+function rangodefechas ($span){
+	switch ($span){
+		case 30:
+			$fecha_inicio = date();
+			return $fecha_inicio;
+	}
+}
+
+?>

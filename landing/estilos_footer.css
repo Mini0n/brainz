@@ -1,0 +1,119 @@
+div#footer{
+    width: 100%;
+    height: 15vh;
+    float: left;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#creado{
+    width: 60%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin-left: 0;
+}
+div#herr{
+    width: 30%;
+    float: left;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.herramienta{
+    float: left;
+    display: block;
+    height: 12vh;
+    margin-right: 0%;
+    align-items: right;
+}
+div#powered{
+    width: 70%;
+    float: left;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#powered h2{
+    margin-right: 2%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    line-height: 12vh;
+    float: left;
+    display: block;
+    color: #162D36; /*Color de letras*/
+}
+div#powered img.brains{
+    height: 10vh;
+    margin-top: 1.5%;
+    float: left;
+    display: block;
+    margin-right: 2%;
+}
+div#powered img.lirun{
+    float: left;
+    display: block;
+    height: 9vh;
+    margin-top:0.5%; 
+}
+div#creado a:hover{}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 800px) {
+
+    div#footer{
+        float: left;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        /*background: #EF6C00;/*naranja*/
+        }
+    div#creado{
+        width: 100%;
+        height: 15vh;
+        margin-left: 0%;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    div#herr{
+        width: 500%;
+        height: 15vh;
+        float: left;
+        display: block;
+    }
+    div#powered{
+        width: 500%;
+        height: 15vh;
+        float: left;
+        display: block;
+    }
+    div#powered h2{
+        /*background: #F50057;/*rosa*/
+        font-size: 0.8em;
+        margin-top: 0.2vh;
+        width: 70%;
+        height: 3vh;
+        line-height: 100%;
+        float: left;
+        display: block;
+        margin-bottom: 0;
+    }  
+    div#powered img.brains{
+        height: 8vh;
+        float: left;
+        display: block;
+        margin-top: 0;
+    }
+    div#powered img.lirun{
+        height: 8vh;
+        float: left;
+        display: block;
+        margin-top: 0;
+    }
+
+}

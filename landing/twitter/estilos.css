@@ -1,0 +1,448 @@
+/*
+------------
+Visit twitterbootstrap.org for more tut 
+-------------
+*/
+
+/*@import url('css/bootstrap.min.css');
+@import url('css/bootstrap-responsive.min.css');
+/* New styles */
+*{
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-y: hidden;
+	overflow-x:hidden;
+	background: url(../img/light_grey.png);
+}
+div#contenedor{
+	width: 100%;
+	/*background: yellow;*/
+}
+div#header{
+	width: 100%;
+	height: 40vh;
+	float: left;    
+    background: #5098D3; /*azul cielo*/
+}
+div#tit{
+	width: 100%;
+	height: 20vh;
+	float: left;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#header h1{
+	width: 100%;
+	height: 10vh;
+	margin-top: 10vh;
+	float: left;
+	display: block;
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'Oswald', sans-serif;
+}
+div#img{
+	width: 100%;
+	height: 20vh;
+	float: left;    
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#img img{
+	margin: 0;
+	width: 20%;
+}
+div#formulario{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 0%;
+	float: left;
+	display: block;
+}
+form{
+	width: 100%;
+	height: 48vh;
+	float: left;
+	display: block;
+	font-family: 'Helvetica';
+	font-size: 1em;
+	color: #424242; /*gris oscuro*/
+	margin-top: 0.5%;
+}
+label.valid {
+	width: 10%;
+	height: 10%;
+	float: left;
+	background: url(img/valid.png) center center no-repeat;
+	display: inline-block;
+	text-indent: -9999px;	
+}
+span.error {
+	font-family:'Helvetica';
+	color: #D50000; /*rojo*/
+	text-align: left;
+	font-size: 0.7em;
+	height: 2.5vh;
+	line-height: 4vh;
+	float: left;
+	display: block;
+	margin: 0 0  0 1%;
+}
+div.form-control-group{
+	width: 100%;
+	height: 8vh;
+	float: left;
+	display: block;
+	margin: 1% 0;
+}
+form label#cumple{
+	width: 16%;
+	margin-left: 10%;
+	height: 2.5vh;
+	line-height: 3vh;
+	font-size: 1em;
+	color: #424242; /*gris oscuro*/
+	float: left;
+	display: block;
+	letter-spacing: 1px;
+}
+form label.larga{
+	width: 30%;
+	height: 2.5vh; 
+	line-height: 100%;
+	margin: 1% 0 0 10%;
+	float: left;
+	display: block;
+	color: #424242; /*gris oscuro*/
+	letter-spacing: 1px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #424242; /*gris oscuro*/
+  font-size: 1em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #424242; /*gris oscuro*/
+    font-size: 1em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #424242; /*gris oscuro*/
+    font-size: 1em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #424242; /*gris oscuro*/
+    font-size: 1em;
+}
+
+input{
+	width: 80%;
+	height: 2.5vh;
+	float: left;
+	display: block;
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: #424242; /*gris oscuro*/
+	text-align: left;
+}
+input#nombre{
+	border-bottom: 4px solid #424242; /*gris oscuro*/
+	background: none;
+	height: 2.5vh;
+	margin-left: 0%;
+}
+input#apellido{
+	border-bottom: 4px solid #424242; /*gris oscuro*/
+	background: none;
+	height: 2.5vh;
+	margin: 0;
+}
+input#cumple{
+	border-bottom: 4px solid #424242; /*gris oscuro*/
+	background: none;
+	color: #424242; /*gris oscuro*/
+	font-family: 'Helvetica';
+	height: 3vh;
+	margin: 0;
+	width: 64%;
+	text-align: center;
+}
+input#email{
+	border-bottom: 4px solid #424242; /*gris oscuro*/
+	background: none;
+	height: 3vh;
+	margin-left: 10%;
+}
+input#agree{
+	margin: 0.5% 0 0 0;
+	height: 3vh;
+	line-height: 3vh;
+	width: 5%;
+	float: left;
+	display: block;
+}
+select#genero{
+	width: 80%;
+	height: 4vh;
+	line-height: 4vh;
+	margin-left: 10%;
+	float: left;
+	display: block;
+	background: none;
+	border-bottom: 4px solid #424242; /*gris oscuro*/
+	color: #424242; /*gris oscuro*/
+	border-radius: 0;
+	font-family: 'Helvetica';
+	font-size: 1em;
+}
+button#submit{
+	float: left;
+	display: block;
+	width: 40%;
+	height: 4vh;
+	margin-left: 30%;
+	background: #455E6B;
+	border-radius: 11.25px;
+	font-family: 'Oswald', sans-serif;
+	line-height: 4vh;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+button#submit:hover{
+	background: #162D36; /*azul oscuro formulario*/
+	-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-ms-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+div#footer{
+    width: 100%;
+    height: 10vh;
+    float: left;
+    background: #FFFFFF;
+}
+div#creado{
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#creado h2{
+    margin-right: 2%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    line-height: 12vh;
+    float: left;
+    display: block;
+    color: #162D36; /*Color de letras*/
+}
+img.herramienta{
+    float: left;
+    display: block;
+    height: 8vh;
+    margin-top: 1.5vh;
+    margin-right: 2%;
+    margin-left: 0%;
+}
+div#creado img.brains{
+    height: 10vh;
+    margin-top: 1.5%;
+    float: left;
+    display: block;
+    margin-right: 2%;
+}
+div#creado img.lirun{
+    float: left;
+    display: block;
+    height: 9vh;
+    margin-top:0.5%; 
+}
+div#creado a:hover{}
+
+/*PLACEHOLDER*/
+
+
+@media only screen and (max-width: 800px) {
+form{   	
+    	height: 100%;
+    	margin-top: 5%;
+    	/*background: #5098D3; /*azul cielo*/
+    }
+    span.error {
+		font-family:'Helvetica';
+		color: #D50000; /*rojo*/
+		text-align: left;
+		font-size: 0.4em;
+		height: 2vh;
+		line-height: 2vh;
+		float: left;
+		display: block;
+		margin-top: 0.3%;
+	}
+
+	div.form-control-group{
+		width: 100%;
+		height: 7vh;
+		float: left;
+		display: block;
+		margin: 0.3vh 0;
+}
+   /* form label{
+    	width: 80%;
+    	height: 2vh;
+    	line-height: 1vh;
+    	font-size: 0.7em;
+    	font-family: 'Helvetica';
+    	float: left;
+    	display: block;
+    }*/
+    div#terminos_mobile{
+    	height:3.5vh;
+    	margin-bottom: 2vh;
+    }
+    label#terminos{
+    	height: 2vh;
+    	width: 80%;
+    	float: left;
+    	display: block;
+    	font-size: 0.7em;
+    }
+    input#agree{
+    	width: 25px;
+    	height: 25px;
+    	height: 2vh;
+    	float: left;
+    	display: block;
+    }
+    label.genero{
+		width:45%;
+		float: left;
+		text-align: left;
+		color: #424242; /*gris oscuro*/
+	}
+	label#cumple{ /*original mide 16%*/
+		float: left;
+		display: block;
+		height: 2vh;
+		margin-bottom: 0.4vh;
+		width: 100%;
+		margin-right: 50%;  /*16*500=80*/
+		font-family: 'Helvetica';
+		font-size: 0.1em;
+	}
+	label#cumple p{
+		font-size: 0.7em;
+		font-family: 'Helvetica';
+	}
+	input#cumple{
+		border-bottom: 2px solid #424242; /*gris oscuro*/
+		float: left;
+		display: block;
+		background: none;
+		color: #FFFFFF;
+		border-radius: 0;
+		font-family: 'Helvetica';
+		font-size: 0.7em;
+		width: 80%;
+	}
+    form input{
+    	width: 80%;
+    	height: 3.2vh;
+    	float: left;
+    	display: block;
+    	font-size: 0.7em;
+    	font-family: 'Helvetica';
+    	text-align: left;
+    	margin-top: 2%;
+    }
+
+    input#nombre{
+    	border-bottom: 2px solid #424242; /*gris oscuro*/
+    	border-radius: 0;
+    	font-family: 'Helvetica';
+    }
+    input#apellido{
+		border-bottom: 2px solid #424242; /*gris oscuro*/
+		background: none;
+		border-radius: 0;
+	}
+	select#genero{
+		width: 80%;
+		height: 3.5vh;
+		float: left;
+		display: block;
+		margin:  0vh 0 0vh 0;
+		background: none;
+		border-bottom: 2px solid #424242; /*gris oscuro*/
+		color: #FFFFFF;
+		border-radius: 0;
+		font-family: 'Helvetica';
+		font-size: 0.7em;
+	}
+    input#email{
+    	border-bottom: 2px solid #424242; /*gris oscuro*/
+    	font-family: 'Helvetica';
+    	border-radius: 0;
+    }
+    button#enviar{
+    	font-size: 0.6em;
+    	width: 50%;
+    	float: left;
+    	display: block;
+    }
+    button#enviar{
+    	font-size: 0.6em;
+    }
+	div#footer{
+    	float: left;
+    	display: block;
+    	position: relative;
+    	/*background: #EF6C00;/*naranja*/
+    	}
+    div#herramienta img{}/*todo igual*/
+    div#creado{
+    	width: 100%;
+        margin-left: 0;
+        display: inline-block;
+    }
+    div#creado h2{
+    	/*background: #F50057;/*rosa*/
+    	font-size: 0.8em;
+    	margin-top: 0.5vh;
+        width: 70%;
+    	height: 3vh;
+    	line-height: 100%;
+    	float: left;
+    	display: block;
+        margin-bottom: 0;
+    }
+    div#creado img.brains{
+    	height: 7vh;
+    	float: left;
+    	display: block;
+        margin-top: 0;
+    }
+    div#creado img.lirun{
+    	height: 8vh;
+    	float: left;
+    	display: block;
+        margin-top: 0;
+    }
+
+
+	}

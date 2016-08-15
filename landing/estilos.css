@@ -1,0 +1,389 @@
+*{
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	overflow-y: scroll;
+	overflow-x:hidden;
+}
+/*FUENTE PERSONALIZADA*/
+@font-face {
+    font-family: wifi;
+    src: url(tipografia/bebas.otf);
+}
+
+div#wrapper{
+	width: 100%;
+	height: auto;
+}
+div#header{
+	width: 100%;
+	height: 35vh;
+	float: left;
+	display: block;
+}
+div#logo_restaurante{
+	width: 50%;
+	height: 35vh;
+	/*padding: 0 5%;
+	float: left;
+	display: block;*/
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#logo_restaurante img.logo{
+	width: 70%;
+	/*margin: 15% 0;*/
+    margin: 0;
+}
+div#foto_restaurante{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: block;
+}
+div#foto_restaurante img.foto{ /*fotografía de restaurante*/
+    width: 100%;
+	max-height: 40vh;
+}
+div#divisor{
+	width: 100%;
+	height: 8vh;
+	float: left;
+	display: block;
+	background: #5098D3; /*azul cielo*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div#divisor img.banderin{
+    	margin: 0;
+}
+div#conexiones{
+	width: 100%;
+	height: 45vh;
+	float: left;
+	display: block;
+}
+div#conexiones ul{
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	float: left;
+	display: block;
+}
+div#conexiones ul h1{
+	width: 100%;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.6em;
+	color: #162D36; /*Color de letras*/
+}
+div#conexiones ul li{
+	width: 46%;
+	height: 100%;
+	float: left;
+	display: block;
+	padding:0.5% 2%;
+}
+div#conexiones ul li.izq{
+	background: #9D9D9C; /*Bloque formulario*/
+}
+
+div#conexiones ul li.centro{
+	background: #C9C9C9; /*bloque redes sociales*/
+}
+div.centrar{
+	width: 90%;
+	height: 20vh;
+	margin-left: 5%;
+	margin-top: 10%;
+}
+a.boton_login{}
+a.boton_login:hover{
+    opacity: 0.5;
+}
+div.facebook{
+	width: 33%;
+	height: 20vh;
+	float: left;
+	display: block;
+}
+div.facebook img{
+	width: 70%;
+	float: left;
+	display: block;
+	margin: 0 15%;
+}
+div.twitter{
+	width: 33%;
+	height: 20vh;
+	float: left;
+	display: block;
+	/*margin-top: 10%;*/
+}
+div.twitter img{
+	width: 70%;
+	float: left;
+	display: block;
+	margin: 0 15%;
+}
+form#twitter{
+   width: 80%;
+   height: 100%;
+   border-radius: 100px;
+}
+input#twitter{
+    width: 100%;
+    height: 100%;
+    background: url(img/twitter.png) no-repeat;
+    background-size: 90%;
+    cursor: pointer;
+}
+div.google{
+	width: 33%;
+	height: 20vh;
+	float: left;
+	display: block;
+	/*margin-top: 10%;*/
+}
+div.google img{
+	width: 70%;
+	float: left;
+	display: block;
+	margin: 0 15%;
+}
+div#conexiones ul li.der{
+	background: #9D9D9C; /*bloque conecta*/
+}
+div#footer{
+    width: 100%;
+    height: 10vh;
+    float: left;
+    background: #FFFFFF;
+}
+div#creado{
+    width: 70%;
+    height: 100%;
+    float: left;
+    display: block;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#creado h2{
+    margin-right: 2%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    line-height: 12vh;
+    float: left;
+    display: block;
+    color: #162D36; /*Color de letras*/
+}
+img.herramienta{
+    float: left;
+    display: block;
+    height: 8vh;
+    margin-top: 1.5vh;
+    margin-right: 2%;
+    margin-left: 0%;
+}
+div#creado img.brains{
+    height: 10vh;
+    margin-top: 1.5%;
+    float: left;
+    display: block;
+    margin-right: 2%;
+}
+div#creado img.lirun{
+    float: left;
+    display: block;
+    height: 9vh;
+    margin-top:0.5%; 
+}
+div#creado a:hover{}
+/*MEDIA QUERIES*/
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 800px) {
+    body {
+     	background: #FFFFFF;
+     	width: 100%;
+     	overflow-x: scroll;
+     	overflow-y:scroll; 
+    }
+    div#header{
+    	width: 100%;
+    	height: 20vh;
+    	float: left;
+    	display: block;
+    }
+    div#logo_restaurante{
+    	width: 50%;
+    	height: 20vh;
+    	background: #FFFFFF; /*blanco*/
+    	float: left;
+    	display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+    div#logo_restaurante img.logo{
+    	display: block;
+    	float: left;
+    	width: 100%;
+    	max-height: 20vh;
+    	margin-top: 0;
+    }
+    div#foto_restaurante{
+    	width: 50%;
+    	height: 25vh;
+    	float: left;
+    	display: block;
+    	background: #FFFFFF; /*blanco*/
+    }
+    div#foto_restaurante img.foto{
+    	width: 100%;
+    	max-height: 30vh;
+    }
+    div#divisor{
+    	float: left;
+    	width: 100%;
+    	height: 8vh;
+    	background: #5098D3; /*azul cielo*/
+    	display: flex;
+		align-items: center;
+		justify-content: center;
+    }
+    div#divisor img.banderin{
+    	margin: 0;
+    	width: 80%;
+    	max-height: 7vh;
+    }
+    div#conexiones{
+    	width: 100%;
+    	height: 60vh;
+    	float: left;
+    	display: block;
+    	/*background: #5098D3; /*azul cielo*/
+    }
+    div#conexiones ul{
+    	width: 100%;
+    	height: 100%;
+    	float: left;
+    	display: block;
+    }
+    div#conexiones ul h1{
+    	width: 100%;
+    	text-align: center;
+    	font-size: 1em;
+    	line-height: 100%;
+    }
+    div#conexiones ul li{
+    	width: 46%;
+    	height: 100%;
+    	float: left;
+    	display: block;
+    	padding: 1% 2%;
+    }
+    div#conexiones ul li.izq{}
+    
+    div.centrar{
+    	height: 40vh;
+    	/*background: #1DE9B6; /*azul neon*/
+    	float: left;
+    	display: block;
+    }
+    div.facebook{
+    	width: 100%;
+    	height: 13vh;
+    	float: left;
+    	display: block;
+    	/*background: #00ACC1;/*azul agua*/
+    	display: flex;
+		align-items: center;
+		justify-content: center 
+    }
+    div.facebook img{
+    	width: auto;
+    	height: 11vh;
+    	margin: 0;
+    }
+    div.twitter{
+    	width: 100%;
+    	height: 13vh;
+    	float: left;
+    	display: block;
+    	display: flex;
+		align-items: center;
+		justify-content: center;
+    	/*background: #FFEA00;/*amarillo*/
+    }
+    div.twitter img{
+    	width: auto;
+    	height: 11vh;
+    	margin: 0;
+    }
+    div.google{
+    	width: 100%;
+    	height: 13vh;
+    	float: left;
+    	display: block;
+    	display: flex;
+		align-items: center;
+		justify-content: center;
+    	/*background: #F50057;/*rosa*/
+    }
+    div.google img{
+    	width: auto;
+    	height: 11vh;
+    	margin: 0;
+    }
+    div#footer{
+    	float: left;
+    	display: block;
+    	position: relative;
+    	/*background: #EF6C00;/*naranja*/
+    	}
+    div#herramienta img{}/*todo igual*/
+    div#creado{
+    	width: 100%;
+        margin-left: 0;
+        display: inline-block;
+    }
+    div#creado h2{
+    	/*background: #F50057;/*rosa*/
+    	font-size: 0.8em;
+    	margin-top: 0.5vh;
+        width: 70%;
+    	height: 3vh;
+    	line-height: 100%;
+    	float: left;
+    	display: block;
+        margin-bottom: 0;
+    }
+    div#creado img.brains{
+    	height: 7vh;
+    	float: left;
+    	display: block;
+        margin-top: 0;
+    }
+    div#creado img.lirun{
+    	height: 8vh;
+    	float: left;
+    	display: block;
+        margin-top: 0;
+    }
+
+
+
+
+}

@@ -1,0 +1,17 @@
+<?php
+/*
+ * @author Puneet Mehta
+ * @website: http://www.PHPHive.info
+ * @facebook: https://www.facebook.com/pages/PHPHive/1548210492057258
+ */
+require_once 'config.php'; //conexion con BD 
+//if (isset($_SESSION["user_id"]) && $_SESSION["user_id"] != "") {
+  // user already logged in the site
+  //header("location:".SITE_URL . "home.php");
+//}
+?>
+
+<a class="btn btn-block btn-social btn-twitter" href="twitter/twitter_login.php">
+  <img src="../img/twitter.png">
+</a>
+
